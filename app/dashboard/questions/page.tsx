@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 
@@ -11,7 +11,7 @@ interface Question {
   difficulty: 'easy' | 'medium' | 'hard';
 }
 
-export default function QuestionsPage() {
+function QuestionsContent() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -372,5 +372,13 @@ export default function QuestionsPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function QuestionsPage() {
+  return (
+    <Suspense fallback={<div className="p-8 text-center">Loading questions...</div>}>
+      <QuestionsContent />
+    </Suspense>
   );
 }
