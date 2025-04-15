@@ -76,12 +76,40 @@ export default function PaymentPlans() {
         script.id = 'paystack-script';
         script.src = 'https://js.paystack.co/v1/inline.js';
         script.async = true;
+        
         script.onload = () => {
+          console.log('Paystack script loaded successfully');
           setPaystackLoaded(true);
         };
+        
+        script.onerror = (error) => {
+          console.error('Error loading Paystack script:', error);
+          alert('Payment system could not be loaded. Please try again later.');
+        };
+        
         document.body.appendChild(script);
       } else {
-        setPaystackLoaded(true);
+        // Script already exists
+        if (window.PaystackPop) {
+          console.log('Paystack already available');
+          setPaystackLoaded(true);
+        } else {
+          console.warn('Paystack script exists but PaystackPop is not defined');
+          // Try to reload the script
+          const existingScript = document.getElementById('paystack-script');
+          if (existingScript) {
+            existingScript.remove();
+            const newScript = document.createElement('script');
+            newScript.id = 'paystack-script';
+            newScript.src = 'https://js.paystack.co/v1/inline.js';
+            newScript.async = true;
+            newScript.onload = () => {
+              console.log('Paystack script reloaded successfully');
+              setPaystackLoaded(true);
+            };
+            document.body.appendChild(newScript);
+          }
+        }
       }
     }
   }, []);
@@ -161,7 +189,28 @@ export default function PaymentPlans() {
     setIsProcessing(false);
   };
 
-  const initiatePayment = () => {
+  // Add a function to verify Paystack configuration
+  const verifyPaystackConfig = async () => {
+    try {
+      const response = await fetch('/api/verify-paystack');
+      const data = await response.json();
+      
+      console.log('Paystack configuration check:', data);
+      
+      if (!data.publicKeyAvailable) {
+        alert('Payment configuration error: Public key not available. Please contact support.');
+        return false;
+      }
+      
+      return true;
+    } catch (error) {
+      console.error('Error verifying Paystack configuration:', error);
+      alert('Error checking payment configuration. Please try again later.');
+      return false;
+    }
+  };
+
+  const initiatePayment = async () => {
     if (!user || !paymentInfo.email || !paymentInfo.amount) {
       alert('Please log in to make a payment');
       return;
@@ -172,12 +221,31 @@ export default function PaymentPlans() {
       return;
     }
 
+    // Verify Paystack configuration before proceeding
+    const configValid = await verifyPaystackConfig();
+    if (!configValid) {
+      return;
+    }
+
+    // Get the Paystack public key
+    const paystackPublicKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY;
+    
+    // Debug the key (will only show in browser console)
+    console.log('Paystack key available:', !!paystackPublicKey);
+    
+    if (!paystackPublicKey) {
+      alert('Payment configuration error. Please contact support.');
+      setIsProcessing(false);
+      setPaymentStatus('error');
+      return;
+    }
+
     setIsProcessing(true);
 
     try {
       // Use the global PaystackPop object
       const handler = window.PaystackPop.setup({
-        key: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || '',
+        key: paystackPublicKey,
         email: paymentInfo.email,
         amount: paymentInfo.amount,
         currency: 'ZAR',
