@@ -195,7 +195,7 @@ export default function SubmissionsPage() {
                   <p className="text-white mb-4">{answer.question}</p>
                   {answer.videoPath && (
                     <div className="mt-4">
-                      <p className="text-gray-400 text-sm mb-2">Candidate's Response:</p>
+                      <p className="text-gray-400 text-sm mb-2">Candidate&apos;s Response:</p>
                       <video 
                         className="w-full aspect-video bg-black rounded-lg" 
                         src={answer.videoPath}

@@ -509,7 +509,7 @@ export default function InterviewPage() {
                 />
                 {!isRecording && (
                   <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                    <p className="text-white text-lg">Press "Start Recording" to begin</p>
+                    <p className="text-white text-lg">Press &quot;Start Recording&quot; to begin</p>
                   </div>
                 )}
               </div>

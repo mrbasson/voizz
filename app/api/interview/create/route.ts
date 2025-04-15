@@ -4,7 +4,6 @@ import { interviewQuestions } from '../[id]/route';
 import fs from 'fs';
 import path from 'path';
 import { getAuth, Auth } from 'firebase-admin/auth';
-import { App } from 'firebase-admin/app';
 import { app } from '@/firebase/admin';
 
 // Initialize Firebase Auth with error handling
@@ -53,7 +52,7 @@ export async function POST(req: Request) {
           userEmail = decodedToken.email || null;
           userId = firebaseUid; // Use Firebase UID as the user ID
           
-          console.log(`Authenticated user with Firebase UID: ${firebaseUid}`);
+          console.log(`Authenticated user with Firebase UID: ${firebaseUid}, email: ${userEmail}`);
         }
       } catch (authError) {
         console.error('Authentication error:', authError);

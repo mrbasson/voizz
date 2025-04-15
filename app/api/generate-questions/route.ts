@@ -116,11 +116,12 @@ Format the response as a JSON object with a 'questions' array. Each question sho
           { status: 500 }
         );
       }
-    } catch (openaiError: any) {
-      console.error('OpenAI API error:', openaiError.message, openaiError.status);
+    } catch (openaiError: unknown) {
+      const error = openaiError as { message: string; status?: number };
+      console.error('OpenAI API error:', error.message, error.status);
       return NextResponse.json(
-        { error: `Failed to generate questions - ${openaiError.message}` },
-        { status: openaiError.status || 500 }
+        { error: `Failed to generate questions - ${error.message}` },
+        { status: error.status || 500 }
       );
     }
   } catch (error) {

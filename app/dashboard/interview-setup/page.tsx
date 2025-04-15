@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+// Removing unused imports but keeping the structure for future use
+import { useSearchParams } from 'next/navigation';
 
 interface InterviewSetupForm {
   firstName: string;
@@ -21,8 +22,9 @@ export default function InterviewSetupPage() {
   const [error, setError] = useState<string | null>(null);
   const [interviewLink, setInterviewLink] = useState<string | null>(null);
   
+  // Keeping searchParams for potential future use but commenting out router
   const searchParams = useSearchParams();
-  const router = useRouter();
+  // const router = useRouter();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;

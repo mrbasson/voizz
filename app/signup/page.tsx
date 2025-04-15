@@ -27,8 +27,9 @@ export default function SignUp() {
       setLoading(true);
       await signUp(email, password);
       router.push('/dashboard');
-    } catch (error: any) {
-      setError(error.message);
+    } catch (error: unknown) {
+      const errorWithMessage = error as { message: string };
+      setError(errorWithMessage.message);
     } finally {
       setLoading(false);
     }

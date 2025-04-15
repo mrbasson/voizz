@@ -11,10 +11,6 @@ interface Question {
   difficulty: 'easy' | 'medium' | 'hard';
 }
 
-interface QuestionsResponse {
-  questions: Question[];
-}
-
 export default function QuestionsPage() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
@@ -140,7 +136,7 @@ export default function QuestionsPage() {
           }
           
           throw new Error(`Failed to create interview: ${errorData.message || response.statusText}`);
-        } catch (parseError) {
+        } catch (error) {
           // If we can't parse the JSON, use the cloned response to get the text
           try {
             const responseText = await responseClone.text();
@@ -282,7 +278,7 @@ export default function QuestionsPage() {
             
             {showFirstInterviewMessage && (
               <div className="mb-4 p-3 bg-green-500/10 border border-green-500 rounded-lg">
-                <p className="text-green-400 font-medium">🎉 Your first interview is free!</p>
+                <p className="text-green-400 font-medium">Your first interview is free!</p>
                 <p className="text-gray-300 text-sm mt-1">
                   For additional interviews, you'll need to select a payment plan.
                 </p>

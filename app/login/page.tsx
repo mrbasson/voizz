@@ -21,8 +21,9 @@ export default function Login() {
       setLoading(true);
       await signIn(email, password);
       router.push('/dashboard');
-    } catch (error: any) {
-      setError(error.message);
+    } catch (error: unknown) {
+      const errorWithMessage = error as { message: string };
+      setError(errorWithMessage.message);
     } finally {
       setLoading(false);
     }
@@ -94,7 +95,7 @@ export default function Login() {
           </div>
 
           <div className="flex items-center justify-center space-x-2 text-sm">
-            <span className="text-gray-400">Don't have an account?</span>
+            <span className="text-gray-400">Don&apos;t have an account?</span>
             <Link href="/signup" className="text-blue-500 hover:text-blue-400 font-medium">
               Sign up
             </Link>

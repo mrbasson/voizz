@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect } from 'react';
 import PaymentPlans from '@/app/components/PaymentPlans';
 
 export default function PaymentPage() {

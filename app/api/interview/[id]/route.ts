@@ -2,8 +2,16 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+// Define a type for the interview questions
+interface InterviewQuestion {
+  category: string;
+  question: string;
+  expectedDuration: number;
+  difficulty: string;
+}
+
 // Store questions temporarily in memory (in production, this would be in a database)
-const interviewQuestions = new Map<string, any>();
+const interviewQuestions = new Map<string, InterviewQuestion[]>();
 
 export async function GET(
   request: Request,
@@ -30,7 +38,7 @@ export async function GET(
           const interviewData = JSON.parse(fileData);
           
           // Add to in-memory map for future requests
-          questions = interviewData.questions;
+          questions = interviewData.questions as InterviewQuestion[];
           interviewQuestions.set(interviewId, questions);
           
           console.log(`Loaded interview ${interviewId} from file storage with ${questions.length} questions`);
@@ -42,15 +50,15 @@ export async function GET(
       }
     }
     
-    if (!questions) {
-      console.log(`Interview with ID ${interviewId} not found`);
-      // Return a 404 error
+    // If questions are still not found, return 404
+    if (!questions || questions.length === 0) {
+      console.log(`No questions found for interview ${interviewId}`);
       return NextResponse.json(
-        { error: 'Interview not found. Please create a new interview with a job description.' },
+        { error: 'Interview not found' },
         { status: 404 }
       );
     }
-
+    
     console.log(`Found interview with ID ${interviewId}, returning ${questions.length} questions`);
     return NextResponse.json({ questions });
   } catch (error) {

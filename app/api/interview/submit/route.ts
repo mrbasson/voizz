@@ -78,7 +78,15 @@ export async function POST(req: Request) {
     }
 
     // Update answers with video file paths
-    const updatedAnswers = answers.map((answer: any, index: number) => ({
+    interface Answer {
+      category: string;
+      question: string;
+      recordingIndex: number;
+      videoPath?: string | null;
+      [key: string]: any; // For any other properties in the answer object
+    }
+    
+    const updatedAnswers = answers.map((answer: Answer) => ({
       ...answer,
       videoPath: videoFilePaths[answer.recordingIndex] || null
     }));

@@ -2,13 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { useAuth } from '@/context/AuthContext';
-import dynamic from 'next/dynamic';
 
-// Define the Paystack type for TypeScript
-type PaystackType = {
-  setup: () => void;
-  open: () => void;
-};
+// Define the Paystack type for TypeScript but mark as unused with a comment
+// Keeping this for documentation purposes
+// type PaystackType = {
+//   setup: () => void;
+//   open: () => void;
+// };
 
 interface PlanProps {
   title: string;
@@ -134,7 +134,16 @@ export default function PaymentPlans() {
     }));
   };
 
-  const handlePaymentSuccess = (response: any) => {
+  // Define a type for the payment response
+  interface PaymentResponse {
+    reference: string;
+    status: string;
+    transaction: string;
+    message?: string;
+    [key: string]: any; // For any other properties that might be in the response
+  }
+
+  const handlePaymentSuccess = (response: PaymentResponse) => {
     setIsProcessing(false);
     setPaymentStatus('success');
     console.log('Payment successful', response);
@@ -187,7 +196,7 @@ export default function PaymentPlans() {
             }
           ]
         },
-        callback: (response: any) => {
+        callback: (response: PaymentResponse) => {
           handlePaymentSuccess(response);
         },
         onClose: () => {
@@ -203,7 +212,17 @@ export default function PaymentPlans() {
     }
   };
 
-  const saveSubscription = async (data: any) => {
+  // Define a type for the subscription data
+  interface SubscriptionData {
+    plan: string;
+    amount: number;
+    paymentRef: string;
+    transactionId?: string;
+    userId?: string;
+    email?: string;
+  }
+
+  const saveSubscription = async (data: SubscriptionData) => {
     try {
       // Get the current user's ID token for authentication
       const idToken = await user?.getIdToken();
