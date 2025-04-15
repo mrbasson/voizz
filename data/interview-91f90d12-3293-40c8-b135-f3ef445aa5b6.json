@@ -1,0 +1,52 @@
+{
+  "id": "91f90d12-3293-40c8-b135-f3ef445aa5b6",
+  "position": "Sales Development Representative",
+  "description": "Turn cold data into booked meetings with UK business owners.\nYou're not pitching fluff — you're opening doors for solar companies doing real business.\nYour Target:\n\n2–4 qualified meetings booked per day.\nNo recycled leads. No easy wins. Just straight-up outbound.",
+  "types": "experience",
+  "duration": "15",
+  "questions": [
+    {
+      "category": "Experience",
+      "question": "Can you describe a successful cold calling campaign you have run in the past targeting UK business owners?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Experience",
+      "question": "How do you typically qualify leads to ensure they are a good fit for the solar companies you represent?",
+      "expectedDuration": 3,
+      "difficulty": "easy"
+    },
+    {
+      "category": "Experience",
+      "question": "Give an example of a challenging prospecting situation you've faced and how you overcame it to book a meeting.",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Experience",
+      "question": "What strategies do you use to ensure you meet the daily target of 2-4 qualified meetings booked with UK business owners?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Behavioral",
+      "question": "How do you handle rejection or objections during cold calls? Can you provide an example?",
+      "expectedDuration": 3,
+      "difficulty": "easy"
+    },
+    {
+      "category": "Behavioral",
+      "question": "Describe a time when you had to adapt your sales approach to successfully engage a difficult prospect.",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Technical",
+      "question": "What tools or software do you use for prospecting, lead management, and outreach? How do you leverage them effectively?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    }
+  ],
+  "createdAt": "2025-04-14T12:13:51.868Z"
+}

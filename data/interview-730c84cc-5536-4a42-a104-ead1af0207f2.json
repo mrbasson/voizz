@@ -1,0 +1,59 @@
+{
+  "id": "730c84cc-5536-4a42-a104-ead1af0207f2",
+  "position": "Sales Development Representative",
+  "description": "Turn cold data into booked meetings with UK business owners.\nYou're not pitching fluff — you're opening doors for solar companies doing real business.\nYour Target:\n\n2–4 qualified meetings booked per day.\nNo recycled leads. No easy wins. Just straight-up outbound.",
+  "types": "experience",
+  "duration": "15",
+  "userId": "user_1744634082259_lrjlgj9",
+  "questions": [
+    {
+      "category": "experience",
+      "question": "Can you walk me through your experience in turning cold data into booked meetings with UK business owners for solar companies?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "experience",
+      "question": "How do you ensure that you meet the target of 2–4 qualified meetings booked per day while working with outbound leads?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "experience",
+      "question": "Give me an example of a challenging outbound lead you worked on. How did you handle it, and what was the outcome?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "experience",
+      "question": "Describe a time when you successfully opened doors for a solar company with a UK business owner. What strategies did you use?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "behavioral",
+      "question": "How do you prioritize your outreach efforts when dealing with a large pool of potential leads?",
+      "expectedDuration": 2,
+      "difficulty": "medium"
+    },
+    {
+      "category": "behavioral",
+      "question": "Tell me about a time when you had to handle rejection or objections while prospecting. How did you overcome it?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "technical",
+      "question": "What tools or software have you used for managing outbound sales campaigns and tracking performance metrics?",
+      "expectedDuration": 2,
+      "difficulty": "medium"
+    },
+    {
+      "category": "technical",
+      "question": "How do you ensure that the leads you engage with are not recycled and are indeed relevant for booking meetings with UK business owners?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    }
+  ],
+  "createdAt": "2025-04-14T12:34:43.537Z"
+}

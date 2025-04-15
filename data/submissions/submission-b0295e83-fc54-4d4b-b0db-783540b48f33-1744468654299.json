@@ -1,0 +1,155 @@
+{
+  "id": "b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299",
+  "interviewId": "b0295e83-fc54-4d4b-b0db-783540b48f33",
+  "originalInterview": {
+    "id": "b0295e83-fc54-4d4b-b0db-783540b48f33",
+    "position": "Director of Growth",
+    "description": "You'll be a great fit for this role if you have experience with:\n\n\n\nFunnel Optimization: Experience in specifically tailoring marketing funnels to acquire digital marketing clients, enhancing funnel efficiency and sales growth.\nAgency Experience: Minimum of 5 years in sales, marketing, or growth strategy, for a digital marketing agency.\nSales Proficiency: Demonstrated ability to successfully conduct sales calls and close high-value deals in the digital marketing sector (for closing agency clients).\nLeadership Excellence: Proven track record of leading a marketing team to substantial growth, with clear metrics demonstrating the effectiveness of leadership and strategies implemented.\nEcommerce Experience: Bonus points for candidates with significant experience and understanding of the Ecommerce industry, though not required. ",
+    "types": "problemSolving,behavioral,leadership,experience,sales",
+    "duration": "15",
+    "questions": [
+      {
+        "category": "problemSolving",
+        "question": "How would you optimize a marketing funnel to acquire more digital marketing clients?",
+        "expectedDuration": 3,
+        "difficulty": "medium"
+      },
+      {
+        "category": "problemSolving",
+        "question": "Can you provide an example of a successful funnel optimization strategy you implemented in the past?",
+        "expectedDuration": 2,
+        "difficulty": "easy"
+      },
+      {
+        "category": "behavioral",
+        "question": "Describe a challenging sales call you had to conduct in the digital marketing sector and how you successfully closed the deal.",
+        "expectedDuration": 3,
+        "difficulty": "medium"
+      },
+      {
+        "category": "behavioral",
+        "question": "How do you handle conflicts within your team when leading them towards growth goals?",
+        "expectedDuration": 3,
+        "difficulty": "medium"
+      },
+      {
+        "category": "leadership",
+        "question": "Can you share a specific example of how you led a marketing team to substantial growth? What strategies did you implement and what were the outcomes?",
+        "expectedDuration": 4,
+        "difficulty": "medium"
+      },
+      {
+        "category": "leadership",
+        "question": "How do you measure the effectiveness of your leadership in driving growth within a team?",
+        "expectedDuration": 3,
+        "difficulty": "medium"
+      },
+      {
+        "category": "experience",
+        "question": "Could you discuss a challenging situation you faced at a previous digital marketing agency and how you overcame it?",
+        "expectedDuration": 3,
+        "difficulty": "medium"
+      },
+      {
+        "category": "experience",
+        "question": "What Ecommerce strategies have you found to be most successful in driving sales growth?",
+        "expectedDuration": 3,
+        "difficulty": "medium"
+      },
+      {
+        "category": "sales",
+        "question": "How do you approach high-value deals in the digital marketing sector? Can you walk us through your sales process?",
+        "expectedDuration": 4,
+        "difficulty": "medium"
+      },
+      {
+        "category": "sales",
+        "question": "What techniques do you use to effectively close deals with potential digital marketing agency clients?",
+        "expectedDuration": 3,
+        "difficulty": "medium"
+      }
+    ],
+    "createdAt": "2025-04-12T14:33:41.890Z"
+  },
+  "candidate": {
+    "name": "Warren Basson",
+    "email": "warren@sibzy.co.za",
+    "phone": "0794307277"
+  },
+  "videoFilePaths": [
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q0.webm",
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q1.webm",
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q2.webm",
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q3.webm",
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q4.webm",
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q5.webm",
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q6.webm",
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q7.webm",
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q8.webm",
+    "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q9.webm"
+  ],
+  "answers": [
+    {
+      "question": "How would you optimize a marketing funnel to acquire more digital marketing clients?",
+      "category": "problemSolving",
+      "recordingIndex": 0,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q0.webm"
+    },
+    {
+      "question": "Can you provide an example of a successful funnel optimization strategy you implemented in the past?",
+      "category": "problemSolving",
+      "recordingIndex": 1,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q1.webm"
+    },
+    {
+      "question": "Describe a challenging sales call you had to conduct in the digital marketing sector and how you successfully closed the deal.",
+      "category": "behavioral",
+      "recordingIndex": 2,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q2.webm"
+    },
+    {
+      "question": "How do you handle conflicts within your team when leading them towards growth goals?",
+      "category": "behavioral",
+      "recordingIndex": 3,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q3.webm"
+    },
+    {
+      "question": "Can you share a specific example of how you led a marketing team to substantial growth? What strategies did you implement and what were the outcomes?",
+      "category": "leadership",
+      "recordingIndex": 4,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q4.webm"
+    },
+    {
+      "question": "How do you measure the effectiveness of your leadership in driving growth within a team?",
+      "category": "leadership",
+      "recordingIndex": 5,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q5.webm"
+    },
+    {
+      "question": "Could you discuss a challenging situation you faced at a previous digital marketing agency and how you overcame it?",
+      "category": "experience",
+      "recordingIndex": 6,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q6.webm"
+    },
+    {
+      "question": "What Ecommerce strategies have you found to be most successful in driving sales growth?",
+      "category": "experience",
+      "recordingIndex": 7,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q7.webm"
+    },
+    {
+      "question": "How do you approach high-value deals in the digital marketing sector? Can you walk us through your sales process?",
+      "category": "sales",
+      "recordingIndex": 8,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q8.webm"
+    },
+    {
+      "question": "What techniques do you use to effectively close deals with potential digital marketing agency clients?",
+      "category": "sales",
+      "recordingIndex": 9,
+      "videoPath": "/api/videos/video-b0295e83-fc54-4d4b-b0db-783540b48f33-1744468654299-q9.webm"
+    }
+  ],
+  "submittedAt": "2025-04-12T14:37:34.369Z",
+  "status": "completed"
+}

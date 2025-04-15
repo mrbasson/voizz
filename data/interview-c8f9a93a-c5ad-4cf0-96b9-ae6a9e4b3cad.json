@@ -1,0 +1,58 @@
+{
+  "id": "c8f9a93a-c5ad-4cf0-96b9-ae6a9e4b3cad",
+  "position": "Field marketer",
+  "description": "Role Description\nThis is a part-time or full time remote role in our marketing team at diginu. The successful candidates will onboard restaurants, grocery stores and liquor stores in South Africa, and every order placed on diginu at those stores will result in commission, every single time. As a result, the commission can become significant. It is dependent on own efforts.\n\nThis role is on a commission only basis.\n\nThis industry\nR50 billion+ will be spent in 2025 on online food ordering in South Africa and 21.1 million people will order online. So this industry is HUGE and as a result, the commission is far above industry standard for marketing opportunities.\n\nZoom Webinar Event\nWe have a LIVE Zoom Webinar event on Tuesday 15 April 2025, 20:00-21:00 where we will share all the information with the new team members.\n\nQualifications & Requirements\n* Knowledge on MS Excel\n* Marketing experience\n* Strong analytical and problem-solving skills\n* Excellent communication and interpersonal abilities\n* Ability to work independently and remotely\n* Experience in the tech or e-commerce industry is a plus\n* Must be a South African Citizen. If not, please do not apply.",
+  "types": "sales,experience",
+  "duration": "15",
+  "questions": [
+    {
+      "category": "Behavioral",
+      "question": "Can you tell us about a challenging experience you had when onboarding a client or customer? How did you handle it?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Behavioral",
+      "question": "How do you prioritize your tasks when juggling multiple clients or projects simultaneously?",
+      "expectedDuration": 2,
+      "difficulty": "easy"
+    },
+    {
+      "category": "Technical",
+      "question": "How proficient are you in using MS Excel? Can you provide examples of how you have used Excel in your previous marketing roles?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Experience",
+      "question": "What marketing strategies have you successfully utilized to onboard new clients or customers in the past? Can you share specific examples of your achievements?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Experience",
+      "question": "Have you worked in the tech or e-commerce industry before? If yes, can you elaborate on your experience in that field?",
+      "expectedDuration": 2,
+      "difficulty": "easy"
+    },
+    {
+      "category": "Behavioral",
+      "question": "How do you approach building and maintaining relationships with clients or partners remotely?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Technical",
+      "question": "Can you walk us through a sample marketing campaign you devised to promote a product or service? What were the key metrics you tracked to measure success?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Experience",
+      "question": "How do you adapt your sales pitch when dealing with different types of clients, such as restaurants, grocery stores, or liquor stores?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    }
+  ],
+  "createdAt": "2025-04-11T19:26:56.082Z"
+}

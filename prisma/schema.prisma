@@ -1,0 +1,59 @@
+// This is your Prisma schema file
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id            String         @id @default(cuid())
+  email         String         @unique
+  firebaseUid   String         @unique
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  interviews    Interview[]
+  subscription  Subscription?
+}
+
+model Subscription {
+  id            String         @id @default(cuid())
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  plan          String         // "one-time", "basic", "unlimited"
+  status        String         // "active", "inactive", "expired"
+  startDate     DateTime       @default(now())
+  endDate       DateTime?
+  paymentRef    String?        // Paystack payment reference
+  transactionId String?        // Paystack transaction ID
+  amount        Float
+  currency      String         @default("ZAR")
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId        String         @unique
+  interviewsRemaining Int?     // For one-time and basic plans
+}
+
+model Interview {
+  id          String    @id @default(cuid())
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  jobPosition String
+  jobDescription String @db.Text
+  duration    String
+  interviewTypes String[]
+  questions   Question[]
+  user        User?     @relation(fields: [userId], references: [id])
+  userId      String?
+}
+
+model Question {
+  id          String    @id @default(cuid())
+  category    String
+  question    String    @db.Text
+  expectedDuration Int
+  difficulty  String
+  interview   Interview @relation(fields: [interviewId], references: [id])
+  interviewId String
+}

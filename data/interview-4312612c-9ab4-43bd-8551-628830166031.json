@@ -1,0 +1,46 @@
+{
+  "id": "4312612c-9ab4-43bd-8551-628830166031",
+  "position": "Sales Development Representative",
+  "description": "The Role:\n200–300 cold calls/day to fresh UK data\nBook meetings with decision-makers\nLog and track activity with precision\nWork UK hours (9AM–5PM GMT)\nOwn your pipeline — and your results\n\n\n🎯 What We’re Looking For:\n2–3+ years outbound sales/appointment setting\nNeutral/clear English accent\nStrong opener, confident closer\nCompetitive, coachable, and obsessed with targets\nResilient — rejection fuels you\nDriven to grow and earn fast\n",
+  "types": "problemSolving",
+  "duration": "15",
+  "questions": [
+    {
+      "category": "behavioral",
+      "question": "Can you walk me through your experience with outbound sales and appointment setting?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "experience-based",
+      "question": "How do you handle rejection in a sales environment? Can you provide an example?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "behavioral",
+      "question": "Describe a time when you had to book a meeting with a hard-to-reach decision-maker. How did you approach it?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "behavioral",
+      "question": "Tell me about a sales target you were given. How did you go about achieving it?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "behavioral",
+      "question": "How do you keep track of your sales activities and results? Can you provide an example of a successful tracking method you've used?",
+      "expectedDuration": 2,
+      "difficulty": "easy"
+    },
+    {
+      "category": "technical",
+      "question": "What strategies would you use to handle objections during cold calls?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    }
+  ],
+  "createdAt": "2025-04-14T12:10:27.717Z"
+}

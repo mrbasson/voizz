@@ -1,0 +1,53 @@
+{
+  "id": "73dbed96-b99d-4e6c-8d0d-0f6384fef620",
+  "position": "Marketing Director",
+  "description": "Strategic Marketing Leadership:\n\nDevelop and execute comprehensive global marketing strategies that align with Nurture's mission and business objectives.\nBalance strategic planning with hands-on execution to meet the evolving needs of a startup environment.",
+  "types": "leadership",
+  "duration": "15",
+  "userId": "W39llwSLgXcXbYbSw78slEfSE942",
+  "questions": [
+    {
+      "category": "Leadership",
+      "question": "Can you describe a successful global marketing strategy you developed and executed in a previous role that aligned with the company's mission and objectives?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Leadership",
+      "question": "How have you managed the balance between strategic planning and hands-on execution in a fast-paced startup environment in your previous experiences?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Leadership",
+      "question": "Give an example of a time when you had to lead a marketing team through uncertainty or change. How did you ensure they stayed motivated and focused on the goals?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Behavioral",
+      "question": "Describe a situation where you had to persuade stakeholders to support a marketing initiative. How did you approach this challenge?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Behavioral",
+      "question": "Can you share a time when you had to resolve a conflict within your marketing team? What steps did you take to address the issue?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Technical",
+      "question": "What tools or software do you consider essential for managing and analyzing marketing data? How have you used these tools to inform strategic decisions?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Technical",
+      "question": "How do you stay updated on the latest marketing trends and technologies? Can you provide an example of how you implemented a new trend in your marketing strategy?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    }
+  ],
+  "createdAt": "2025-04-14T17:56:20.280Z"
+}

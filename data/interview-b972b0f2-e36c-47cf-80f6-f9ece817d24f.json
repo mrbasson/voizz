@@ -1,0 +1,59 @@
+{
+  "id": "b972b0f2-e36c-47cf-80f6-f9ece817d24f",
+  "position": "Regional Executive",
+  "description": "Technical and Project Leadership\n\nOversee the delivery of engineering and project management services, ensuring quality, efficiency, and compliance with technical standards and regulations.\nProvide technical direction and mentoring to engineering teams, fostering a culture of excellence and continuous improvement.\nLead high-stakes projects, directly engaging in planning, design reviews, risk assessments, and resource allocation.\nEstablish and uphold best practices, methodologies, and quality control processes across all technical functions.",
+  "types": "leadership",
+  "duration": "15",
+  "userId": "EjfMym8lgyVv1GJ1b8zvNoEbejq2",
+  "questions": [
+    {
+      "category": "Leadership",
+      "question": "Can you describe a challenging project you led from start to finish, highlighting your approach to planning, risk assessment, and resource allocation?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Leadership",
+      "question": "How do you ensure that engineering teams under your supervision uphold technical standards, regulations, and best practices?",
+      "expectedDuration": 3,
+      "difficulty": "easy"
+    },
+    {
+      "category": "Leadership",
+      "question": "Describe a time when you had to provide technical direction and mentoring to a team member to improve their performance. How did you approach this situation?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Leadership",
+      "question": "How do you promote a culture of continuous improvement and excellence within your engineering teams?",
+      "expectedDuration": 2,
+      "difficulty": "easy"
+    },
+    {
+      "category": "Technical",
+      "question": "What methodologies and quality control processes have you successfully implemented in your previous roles to ensure project delivery excellence?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Technical",
+      "question": "How do you keep yourself updated on the latest technical trends and regulations in the engineering industry? Can you provide an example of how this knowledge benefited a project?",
+      "expectedDuration": 4,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Behavioral",
+      "question": "Describe a time when you had to resolve a conflict within a project team. How did you approach the situation, and what was the outcome?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "Behavioral",
+      "question": "Can you share an example of a successful collaboration you facilitated between cross-functional teams to achieve a common project goal?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    }
+  ],
+  "createdAt": "2025-04-14T19:23:02.530Z"
+}

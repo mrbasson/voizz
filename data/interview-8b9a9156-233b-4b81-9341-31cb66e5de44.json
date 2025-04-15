@@ -1,0 +1,58 @@
+{
+  "id": "8b9a9156-233b-4b81-9341-31cb66e5de44",
+  "position": "Sales Development Representative",
+  "description": "The Role:\n200–300 cold calls/day to fresh UK data\nBook meetings with decision-makers\nLog and track activity with precision\nWork UK hours (9AM–5PM GMT)\nOwn your pipeline — and your results\n\n\n🎯 What We’re Looking For:\n2–3+ years outbound sales/appointment setting\nNeutral/clear English accent\nStrong opener, confident closer\nCompetitive, coachable, and obsessed with targets\nResilient — rejection fuels you\nDriven to grow and earn fast\n",
+  "types": "behavioral,leadership",
+  "duration": "15",
+  "questions": [
+    {
+      "category": "technical",
+      "question": "Can you walk me through your experience with making cold calls to generate leads in a high-volume setting?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "technical",
+      "question": "How do you typically qualify leads over the phone to ensure they meet the criteria for booking a meeting with a decision-maker?",
+      "expectedDuration": 2.5,
+      "difficulty": "medium"
+    },
+    {
+      "category": "technical",
+      "question": "How do you ensure accurate and timely logging of sales activities to track progress and optimize performance?",
+      "expectedDuration": 2.5,
+      "difficulty": "easy"
+    },
+    {
+      "category": "behavioral",
+      "question": "Describe a time when you faced rejection in a sales role. How did you handle it, and what was the outcome?",
+      "expectedDuration": 3,
+      "difficulty": "easy"
+    },
+    {
+      "category": "behavioral",
+      "question": "How do you stay motivated and focused when making a high volume of calls each day?",
+      "expectedDuration": 2,
+      "difficulty": "easy"
+    },
+    {
+      "category": "behavioral",
+      "question": "Tell me about a challenging sales goal you set for yourself and how you went about achieving it.",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "leadership",
+      "question": "Can you provide an example of a time when you took the initiative to improve a sales process within your team?",
+      "expectedDuration": 3,
+      "difficulty": "medium"
+    },
+    {
+      "category": "leadership",
+      "question": "How do you approach coaching and mentoring new team members to help them achieve their sales targets?",
+      "expectedDuration": 2.5,
+      "difficulty": "medium"
+    }
+  ],
+  "createdAt": "2025-04-14T11:56:56.728Z"
+}

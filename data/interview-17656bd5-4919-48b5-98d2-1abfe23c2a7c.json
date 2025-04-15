@@ -1,0 +1,64 @@
+{
+  "id": "17656bd5-4919-48b5-98d2-1abfe23c2a7c",
+  "position": "Director of Growth",
+  "description": "ou'll be a great fit for this role if you have experience with:\n\n\n\nFunnel Optimization: Experience in specifically tailoring marketing funnels to acquire digital marketing clients, enhancing funnel efficiency and sales growth.\nAgency Experience: Minimum of 5 years in sales, marketing, or growth strategy, for a digital marketing agency.\nSales Proficiency: Demonstrated ability to successfully conduct sales calls and close high-value deals in the digital marketing sector (for closing agency clients).\nLeadership Excellence: Proven track record of leading a marketing team to substantial growth, with clear metrics demonstrating the effectiveness of leadership and strategies implemented.\nEcommerce Experience: Bonus points for candidates with significant experience and understanding of the Ecommerce industry, though not required. ",
+  "types": "leadership,problemSolving,behavioral,experience,sales",
+  "duration": "15",
+  "questions": [
+    {
+      "category": "leadership",
+      "question": "Can you provide an example of a time when you successfully led a marketing team to substantial growth? What were the key strategies you implemented, and what were the measurable outcomes?",
+      "expectedDuration": 5,
+      "difficulty": "medium"
+    },
+    {
+      "category": "leadership",
+      "question": "How do you ensure alignment and motivation within your team to achieve growth targets? Can you give a specific example of a challenge you faced and how you addressed it as a leader?",
+      "expectedDuration": 5,
+      "difficulty": "medium"
+    },
+    {
+      "category": "problemSolving",
+      "question": "Walk me through a complex funnel optimization project you have implemented. How did you identify the inefficiencies, what changes did you make, and what impact did it have on sales growth?",
+      "expectedDuration": 5,
+      "difficulty": "medium"
+    },
+    {
+      "category": "problemSolving",
+      "question": "How would you approach improving the conversion rate at a specific stage of the marketing funnel? Provide a step-by-step outline of your process.",
+      "expectedDuration": 5,
+      "difficulty": "medium"
+    },
+    {
+      "category": "behavioral",
+      "question": "Describe a challenging sales call you had with a potential high-value client in the digital marketing sector. How did you handle objections and ultimately close the deal?",
+      "expectedDuration": 5,
+      "difficulty": "medium"
+    },
+    {
+      "category": "behavioral",
+      "question": "Tell me about a time when you faced resistance when implementing a new growth strategy. How did you overcome the resistance and drive successful adoption?",
+      "expectedDuration": 5,
+      "difficulty": "medium"
+    },
+    {
+      "category": "experience",
+      "question": "Can you discuss a specific campaign where you worked closely with an Ecommerce client? What specific challenges did you encounter, and how did you tailor the marketing funnel to address those challenges?",
+      "expectedDuration": 5,
+      "difficulty": "medium"
+    },
+    {
+      "category": "experience",
+      "question": "How have you adapted your sales approach when dealing with different types of digital marketing clients? Can you provide examples of successful adaptations you've made?",
+      "expectedDuration": 5,
+      "difficulty": "medium"
+    },
+    {
+      "category": "sales",
+      "question": "What key strategies have you used to close high-value deals in the digital marketing sector? Can you walk me through your typical approach from initial contact to sealing the deal?",
+      "expectedDuration": 5,
+      "difficulty": "medium"
+    }
+  ],
+  "createdAt": "2025-04-12T14:18:15.286Z"
+}
