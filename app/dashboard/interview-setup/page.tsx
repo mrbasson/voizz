@@ -1,7 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-// Removing unused imports but keeping the structure for future use
+import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 interface InterviewSetupForm {
@@ -11,7 +10,8 @@ interface InterviewSetupForm {
   phone: string;
 }
 
-export default function InterviewSetupPage() {
+// Create a client component that uses the useSearchParams hook
+function InterviewSetupContent() {
   const [formData, setFormData] = useState<InterviewSetupForm>({
     firstName: '',
     lastName: '',
@@ -22,9 +22,8 @@ export default function InterviewSetupPage() {
   const [error, setError] = useState<string | null>(null);
   const [interviewLink, setInterviewLink] = useState<string | null>(null);
   
-  // Keeping searchParams for potential future use but commenting out router
+  // Now safely using searchParams inside a component that will be wrapped in Suspense
   const searchParams = useSearchParams();
-  // const router = useRouter();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -165,5 +164,14 @@ export default function InterviewSetupPage() {
         </form>
       </div>
     </div>
+  );
+}
+
+// Main page component with Suspense boundary
+export default function InterviewSetupPage() {
+  return (
+    <Suspense fallback={<div className="p-8 text-center">Loading interview setup...</div>}>
+      <InterviewSetupContent />
+    </Suspense>
   );
 }
