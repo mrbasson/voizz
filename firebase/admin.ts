@@ -26,21 +26,16 @@ try {
           credential: cert({
             projectId,
             clientEmail,
-            // Replace escaped newlines with actual newlines
-            privateKey: privateKey.replace(/\\n/g, '\n'),
+            // Replace escaped newlines with actual newlines if needed
+            privateKey: privateKey.includes('\\n') ? privateKey.replace(/\\n/g, '\n') : privateKey,
           }),
         })
       : apps[0];
-    
-    console.log('Firebase Admin SDK initialized successfully');
   }
 } catch (error) {
   console.error('Error initializing Firebase Admin SDK:', error);
-  // Create a dummy app for development
+  // Fallback to a dummy app
   app = apps.length === 0 ? initializeApp() : apps[0];
 }
 
-// Initialize Auth service
-const auth = getAuth(app);
-
-export { app, auth };
+export { app };
