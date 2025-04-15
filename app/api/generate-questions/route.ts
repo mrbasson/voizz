@@ -1,10 +1,18 @@
 import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Initialize OpenAI client with a more graceful approach for build time
+let openai: OpenAI | null = null;
+try {
+  // Only initialize if API key is available
+  if (process.env.OPENAI_API_KEY) {
+    openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+  }
+} catch (error) {
+  console.error('Error initializing OpenAI client:', error);
+}
 
 interface InterviewRequest {
   jobPosition: string;
@@ -27,7 +35,7 @@ interface QuestionsResponse {
 export async function POST(req: Request) {
   try {
     // Validate API key
-    if (!process.env.OPENAI_API_KEY) {
+    if (!process.env.OPENAI_API_KEY || !openai) {
       console.error('OpenAI API key is missing');
       return NextResponse.json(
         { error: 'OpenAI API key is not configured' },
