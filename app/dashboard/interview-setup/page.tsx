@@ -1,22 +1,36 @@
 'use client';
 
-import { useState, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useState, Suspense, useEffect } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
+import { useAuth } from '@/context/AuthContext';
 
 interface InterviewSetupForm {
   firstName: string;
   lastName: string;
   email: string;
   phone: string;
+  position: string;
+  description: string;
+}
+
+interface Question {
+  category: string;
+  question: string;
+  expectedDuration: number;
+  difficulty: 'easy' | 'medium' | 'hard';
 }
 
 // Create a client component that uses the useSearchParams hook
 function InterviewSetupContent() {
+  const { user } = useAuth();
+  const router = useRouter();
   const [formData, setFormData] = useState<InterviewSetupForm>({
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
+    position: 'Software Developer',
+    description: 'Technical interview for a software development position',
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -33,19 +47,88 @@ function InterviewSetupContent() {
     }));
   };
 
+  // Sample questions for the interview
+  const sampleQuestions: Question[] = [
+    {
+      category: 'Technical',
+      question: 'Explain the difference between var, let, and const in JavaScript.',
+      expectedDuration: 120,
+      difficulty: 'medium'
+    },
+    {
+      category: 'Problem Solving',
+      question: 'How would you implement a function to check if a string is a palindrome?',
+      expectedDuration: 180,
+      difficulty: 'medium'
+    },
+    {
+      category: 'Experience',
+      question: 'Describe a challenging project you worked on and how you overcame obstacles.',
+      expectedDuration: 150,
+      difficulty: 'medium'
+    }
+  ];
+  
+  // State to store the user's auth token
+  const [authToken, setAuthToken] = useState<string | null>(null);
+  
+  // Get the user's auth token when the component mounts or user changes
+  useEffect(() => {
+    const getToken = async () => {
+      if (user) {
+        try {
+          const token = await user.getIdToken();
+          setAuthToken(token);
+        } catch (error) {
+          console.error('Error getting auth token:', error);
+        }
+      }
+    };
+    
+    getToken();
+  }, [user]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
 
     try {
-      // Here we'll add the API call to create the interview link
-      // For now, we'll just generate a mock link
-      const uniqueId = Math.random().toString(36).substring(2, 15);
+      // Create the interview via the API
+      const response = await fetch('/api/interview/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(authToken ? { 'Authorization': `Bearer ${authToken}` } : {})
+        },
+        body: JSON.stringify({
+          position: formData.position,
+          description: formData.description,
+          types: 'technical,behavioral',
+          duration: '30 minutes',
+          questions: sampleQuestions,
+          userId: user?.uid || 'anonymous'
+        })
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to create interview');
+      }
+
+      const data = await response.json();
+      const interviewId = data.id;
+
+      if (!interviewId) {
+        throw new Error('No interview ID returned from server');
+      }
+
+      // Generate the interview link with the actual ID
       const baseUrl = window.location.origin;
-      const link = `${baseUrl}/interview/${uniqueId}`;
+      const link = `${baseUrl}/interview/${interviewId}`;
       setInterviewLink(link);
     } catch (err) {
+      console.error('Error creating interview:', err);
       setError(err instanceof Error ? err.message : 'Failed to create interview link');
     } finally {
       setLoading(false);
@@ -145,6 +228,36 @@ function InterviewSetupContent() {
               name="phone"
               required
               value={formData.phone}
+              onChange={handleInputChange}
+              className="w-full bg-[#2A2A2A] text-white px-4 py-2 rounded-lg border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="position" className="block text-sm font-medium text-gray-400 mb-2">
+              Position
+            </label>
+            <input
+              type="text"
+              id="position"
+              name="position"
+              required
+              value={formData.position}
+              onChange={handleInputChange}
+              className="w-full bg-[#2A2A2A] text-white px-4 py-2 rounded-lg border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="description" className="block text-sm font-medium text-gray-400 mb-2">
+              Description
+            </label>
+            <input
+              type="text"
+              id="description"
+              name="description"
+              required
+              value={formData.description}
               onChange={handleInputChange}
               className="w-full bg-[#2A2A2A] text-white px-4 py-2 rounded-lg border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
             />
