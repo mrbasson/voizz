@@ -26,16 +26,13 @@ export default function Home() {
       <section className="px-6 py-20 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            AI-Powered
-            <br />
-            <span className="text-[#00D1FF]">Recruitment</span>
+            AI-Powered Recruitment Agent
           </h1>
           <p className="text-xl text-gray-400 mb-8">
-            For Maximum Returns
+            Built for Recruiters Who Want to Save Time & Hire Smarter
           </p>
           <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-            Use our voice-enabled AI to automate your screening and assessment process.
-            Get data-driven insights to make better hiring decisions.
+            Streamline your hiring process with our voice-enabled AI Assistant that automates screening and assessments—giving you fast, data-backed insights and quality candidates without lifting a finger.
           </p>
           <div className="flex gap-4 justify-center">
             <Link href="/signup" className="bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-700">
@@ -107,7 +104,7 @@ export default function Home() {
       {/* How it Works */}
       <section id="how-it-works" className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">How Voizz Works</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">🎯 How It Works Is Shockingly Simple</h2>
           <div className="relative">
             <div className="absolute left-1/2 -ml-0.5 w-0.5 h-full bg-gray-800"></div>
             <div className="space-y-16">
@@ -115,8 +112,8 @@ export default function Home() {
                 <div className="ml-6 md:ml-0 md:flex md:items-center">
                   <div className="md:w-1/2 md:pr-8">
                     <div className="bg-[#1A1A1A] p-6 rounded-lg">
-                      <h3 className="text-xl font-bold mb-2">Create Job Listings</h3>
-                      <p className="text-gray-400">Define your requirements and let our AI understand your needs.</p>
+                      <h3 className="text-xl font-bold mb-2">Enter Job Details</h3>
+                      <p className="text-gray-400">Just add the job title, description, desired interview length, and select the type: Behavioral, Leadership, Technical, Problem Solving, or Sales.</p>
                     </div>
                   </div>
                   <div className="absolute left-0 md:left-1/2 mt-3 md:mt-0">
@@ -128,8 +125,8 @@ export default function Home() {
                 <div className="ml-6 md:ml-0 md:flex md:items-center">
                   <div className="md:w-1/2 md:pl-8 md:ml-auto">
                     <div className="bg-[#1A1A1A] p-6 rounded-lg">
-                      <h3 className="text-xl font-bold mb-2">AI Candidate Matching</h3>
-                      <p className="text-gray-400">Our AI analyzes resumes and matches the best candidates.</p>
+                      <h3 className="text-xl font-bold mb-2">Create AI Interview Assistant</h3>
+                      <p className="text-gray-400">Click once, and instantly generate a personalized AI agent—complete with a unique link you can send directly to candidates.</p>
                     </div>
                   </div>
                   <div className="absolute left-0 md:left-1/2 mt-3 md:mt-0">
@@ -141,8 +138,8 @@ export default function Home() {
                 <div className="ml-6 md:ml-0 md:flex md:items-center">
                   <div className="md:w-1/2 md:pr-8">
                     <div className="bg-[#1A1A1A] p-6 rounded-lg">
-                      <h3 className="text-xl font-bold mb-2">Automated Screening</h3>
-                      <p className="text-gray-400">Voice-enabled AI conducts initial screening interviews.</p>
+                      <h3 className="text-xl font-bold mb-2">Let AI Do the Screening</h3>
+                      <p className="text-gray-400">Your candidate receives the link, answers custom questions via short video responses (max 2 min each), and submits. Their entire response package is saved to your recruiter dashboard for review.</p>
                     </div>
                   </div>
                   <div className="absolute left-0 md:left-1/2 mt-3 md:mt-0">
